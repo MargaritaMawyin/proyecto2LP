@@ -9,30 +9,20 @@ class ExtractorMundo
     parsed_content = Nokogiri::HTML(datos)
     datos = parsed_content.css('#right_box')
    
-    datos.css('.fich.div_valoraciones').each do |v|
-
-      top = "10"
-      titulo= v.css('.carac').css('.ln1').css('.juego').inner_text
-
-      genero= v.css('.carac').css('.ln2').css('.genero').inner_text
-
-      fecha= v.css('.carac').css('.ln2').css('.fecha_lanzamiento').inner_text
+    datos.css('.fich.div_valoraciones').each do |dato|
+      
+      top = dato.css('.bloque_texto.fich div').inner_text
+      titulo= dato.css('.carac').css('.ln1').css('.juego').inner_text
+      genero= dato.css('.carac').css('.ln2').css('.genero').inner_text
+      fecha= dato.css('.carac').css('.ln2').css('.fecha_lanzamiento').inner_text.split('/')[2]
       arreglo=[]
-      plataforma= v.css('.carac').css('.ln3').css('.platforms_fich').css('.juego').each do |b|
-      arreglo.push(b.inner_text)
+      plataforma= dato.css('.carac').css('.ln3').css('.platforms_fich').css('.juego').each do |arr|
+      arreglo.push(arr.inner_text)
       end
 
-      juego = Juegos.new(top,titulo,genero,arreglo,fecha)
-      #juego.toString()
+      juego = Juegos.new(top,titulo,genero,arreglo[0],fecha)
       juego.registrar2()
-
-     
-
       end
-
-
-
-
-
+      
   end
 end
