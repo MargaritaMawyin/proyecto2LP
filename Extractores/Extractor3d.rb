@@ -2,7 +2,7 @@ class Extractor3d
 
   def extraerJuegos(url)
     CSV.open('csv/3djuegos.csv','wb') do |csv|
-      csv << %w[top titulo genero plataforma fecha]
+      csv << %w[top titulo genero plataforma anio_lanzamiento]
     end
     pagina = URI.open(url)
     contenido = pagina.read

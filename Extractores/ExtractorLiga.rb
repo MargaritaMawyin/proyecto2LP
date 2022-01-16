@@ -2,7 +2,7 @@ class ExtractorLiga
 
   def extraerJuegos(url)
     CSV.open('csv/ligagamers.csv','wb') do |csv|
-      csv << %w[top titulo genero plataforma fecha]
+      csv << %w[top titulo genero plataforma anio_lanzamiento]
     end
     pagina = URI.open(url)
     contenido = pagina.read
@@ -20,7 +20,7 @@ class ExtractorLiga
         juego = Juegos.new(top,titulo,genero,plataforma,fecha)
         juego.toString()
         juego.registrar3()
-      end 
+      end
     end
   end
 end
