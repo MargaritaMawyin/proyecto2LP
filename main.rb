@@ -1,39 +1,29 @@
+puts "Proyecto 2P - G8"
 require 'open-uri'
 require 'nokogiri'
 require 'csv'
 
-require "./Etiqueta"
-  
-    link= "https://www.mundogamers.com/top100-juegos-editores.html"
-    juegos = URI.open(link)
-    datos = juegos.read
-    parsed_content = Nokogiri::HTML(datos)
-    datos = parsed_content.css('#right_box')
-   
-    datos.css('.fich.div_valoraciones').each do |v|
-      nombre= v.css('.carac').css('.ln1').css('.juego').inner_text
-      puts nombre
+require "./Extractores/Extractor3d"
+require "./Extractores/ExtractorLiga"
+require "./Extractores/ExtractorMundo"
+require "./Juego/Juegos"
 
-      genero= v.css('.carac').css('.ln2').css('.genero').inner_text
-      puts genero
 
-      fecha= v.css('.carac').css('.ln2').css('.fecha_lanzamiento').inner_text
-      puts fecha
-      arreglo=[]
-      plataforma= v.css('.carac').css('.ln3').css('.platforms_fich').css('.juego').each do |b|
-      arreglo.push(b.inner_text)
-      end
-      puts arreglo
+link3d = "https://www.3djuegos.com/index.php?zona=top100"
+linkLiga = "https://www.ligadegamers.com/mejores-videojuegos-de-la-historia/"
+linkMundo = "https://www.mundogamers.com/top100-juegos-editores.html"
+#peliculas = URI.open(link)
+#datos = peliculas.read
+#parsed_content = Nokogiri::HTML(datos)
+#galeria = parsed_content.css('.article_movie_title')
+#puts galeria
+puts("---------3D JUEGOS---------")
+puts(link3d)
+Extractor3d.new.extraerJuegos(link3d.to_s)
+puts("---------LIGA DE GAMERS---------")
+puts(linkLiga)
+ExtractorLiga.new.extraerJuegos(linkLiga.to_s)
+puts("---------MUNDO GAMERS---------")
+puts(linkMundo)
+ExtractorMundo.new.extraerJuegos(linkMundo.to_s)
 
-      ranking= v.css('.fecha_fich').css('.valoracion').inner_text
-      puts ranking
-      
-       puts ' '
-
-      juego = Etiqueta.new(nombre, genero, arreglo,ranking)
-      juego.registrar()
-
-     
-
-      end
-    
