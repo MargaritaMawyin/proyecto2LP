@@ -1,6 +1,6 @@
 class ExtractorMundo
-  def extraerJuegos(url)
-    CSV.open('csv/mundogamers.csv','wb') do |csv|
+  def extraerJuegos(url, out_file)
+    CSV.open('csv/' +out_file +'.csv','wb') do |csv|
       csv << %w[top titulo genero plataforma anio_lanzamiento]
     end
 
