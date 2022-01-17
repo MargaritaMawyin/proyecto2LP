@@ -1,0 +1,101 @@
+top,titulo,genero,plataforma,anio_lanzamiento
+1, The Legend of Zelda: Ocarina of Time,Aventura,Nintendo 64,1998
+2, Half-Life 2,FPS,PC,2004
+3, Super Mario 64,Plataformas,Nintendo 64,1996
+4, Baldur's Gate II: Shadows of Amn,RPG,PC,2000
+5, Final Fantasy VII,JRPG,PlayStation 1,1997
+6, Super Metroid,Plataformas,SNES,1994
+7, The Witcher 3: Wild Hunt,RPG de acción,PC,2015
+8, Ultra Street Fighter IV,Lucha,PC,2014
+9, Grim Fandango,Aventura gráfica,PC,1998
+10, Divinity: Original Sin II,RPG,PC,2017
+11, Grand Theft Auto V,Acción,PlayStation 3,2013
+12, Metal Gear Solid 3: Snake Eater,Sigilo,PlayStation 2,2004
+13, Mario Kart 8 Deluxe,Carreras,Nintendo Switch,2017
+14, The Legend of Zelda: Breath of the Wild,Acción,Nintendo Switch,2017
+15, Tony Hawk's Pro Skater 2,Deportes,PlayStation 1,2000
+16, StarCraft II,Estrategia en tiempo real,PC,2010
+17, Chrono Trigger,JRPG,SNES,1995
+18, Castlevania: Symphony of the Night,Plataformas,PlayStation 1,1997
+19, Star Wars: Knights of the Old Republic,RPG,PC,2003
+20, God of War (2018),Acción,PlayStation 4,2018
+21, Age of Empires II: The Age of Kings,Estrategia en tiempo real,PC,1999
+22, Pokemon HeartGold / SoulSilver,RPG,Nintendo DS,2009
+23, Minecraft,Sandbox,PC,2011
+24, Shenmue,Aventura,Dreamcast,2000
+25, The Last of Us,Acción,PlayStation 3,2013
+26, Perfect Dark,FPS,Nintendo 64,2000
+27, Metal Gear Solid,Sigilo,PlayStation 1,1998
+28, The Legend of Zelda: A Link to the Past,Acción,SNES,1991
+29, Red Dead Redemption 2,Acción,PlayStation 4,2018
+30, Super Mario Odyssey,Plataformas,Nintendo Switch,2017
+31, Counter-Strike,FPS,PC,1999
+32, Silent Hill 2,Survival horror,PlayStation 2,2001
+33, World of Warcraft,MMORPG,PC,2004
+34, Sonic Mania,Plataformas,Nintendo Switch,2017
+35, Gran Turismo 2,Carreras,PlayStation 1,1999
+36, Bloodborne,RPG de acción,PlayStation 4,2015
+37, Fortnite,Battle Royale,PC,2017
+38, Portal 2,Plataformas,PC,2011
+39, SoulCalibur II,Lucha,GameCube,2002
+40, GoldenEye 007,FPS,Nintendo 64,1997
+41, The Elder Scrolls V: Skyrim,RPG,PC,2011
+42, Super Smash Bros,Lucha,Nintendo Switch,2018
+43, Donkey Kong Country: Tropical Freeze,Plataformas,Wii U,2014
+44, Civilization IV,Estrategia por turnos,PC,2005
+45, Mega Man 2,Plataformas,NES,1988
+46, Quake,FPS,PC,1996
+47, Super Mario World,Plataformas,SNES,1990
+48, Diablo,RPG de acción,PC,1996
+49, The Sims 2,Simulación,PC,2004
+50, Final Fantasy IX,RPG,PlayStation 1,2000
+51, Vampire: The Masquerade - Bloodlines,RPG de acción,PC,2004
+52, Fallout 3,RPG,PC,2008
+53, BioShock,Acción,PC,2007
+54, Grand Theft Auto: San Andreas,Acción,PlayStation 2,2004
+55, Halo: Combat Evolved,FPS,Xbox,2001
+56, Tekken 5,Lucha,PlayStation 2,2005
+57, Fire Emblem,RPG,Game Boy Advance,2003
+58, Mass Effect 2,RPG de acción,PC,2010
+59, Crysis,FPS,PC,2007
+60, NieR:Automata,RPG de acción,PlayStation 4,2017
+61, Deus Ex,RPG de acción,PC,2000
+62, Monster Hunter: World,RPG de acción,PlayStation 4,2018
+63, Forza Horizon 4,Carreras,Xbox One,2018
+64, Resident Evil 2 (Remake),Survival horror,PC,2019
+65, Persona 5,JRPG,PlayStation 3,2016
+66, Doom (2016),FPS,Xbox One,2016
+67, Batman: Arkham City,Acción,PlayStation 3,2011
+68, Undertale,RPG,PC,2015
+69, System Shock 2,FPS,PC,1999
+70, Cuphead,Run and gun,PC,2017
+71, Uncharted 2: Among Thieves,Acción,PlayStation 3,2009
+72, Company of Heroes,Estrategia en tiempo real,PC,2006
+73, Splinter Cell Chaos Theory,Sigilo,PC,2005
+74, Borderlands 2,FPS,PC,2012
+75, Shadow of the Colossus,Aventura,PlayStation 2,2005
+76, The Longest Journey,Aventura gráfica,PC,1999
+77, Devil May Cry 5,Hack and slash,Xbox One,2019
+78, Rise of the Tomb Raider,Acción,Xbox One,2015
+79, Journey,Aventura,PlayStation 3,2012
+80, Warcraft III: Reign of Chaos,Estrategia en tiempo real,PC,2002
+81, Resident Evil 4,Survival Horror,GameCube,2005
+82, Final Fight,Beat'em Up,Originalmente en sistemas Arcade,1989
+83, Burnout 3: Takedown,Carreras,Xbox,2004
+84, Dragon Quest VIII: Journey of the Cursed King,JRPG,PlayStation 2,2004
+85, League of Legends,MOBA,PC,2009
+86, Metroid Prime,Acción,GameCube,2002
+87, Spider-Man,Acción,PlayStaton 4,2018
+88, Ikaruga,Shoot'em Up,Dreamcast,2001
+89, Call of Duty 4: Modern Warfare,FPS,PC,2007
+90, Star Fox 64,Shooter,Nintendo 64,1997
+91, Ōkami,Acción,PlayStation 2,2006
+92, XCOM: Enemy Unknown,Estrategia táctica por turnos,PC,2012
+93, Mortal Kombat (9),Lucha,PlayStation 3,2011
+94, Ori and the Blind Forest,Plataformas,PC,2015
+95, The Curse of Monkey Island,Aventura gráfica,PC,1997
+96, Assassin's Creed II,Sigilo,PlayStation 3,2009
+97, Tales of Vesperia,JRPG,Xbox 360,2008
+98, Rock Band,Musical,Xbox 360,2007
+99, Contra III: The Alien Wars,Run and Gun,SNES,1992
+100, Prince of Persia: The Sands of Time,Plataformas,PC,2003

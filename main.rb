@@ -17,20 +17,25 @@ out_file_liga = "ligadegamers"
 
 linkMundo = "https://www.mundogamers.com/top100-juegos-editores.html"
 out_file_mundo = "mundogamers"
-#peliculas = URI.open(link)
-#datos = peliculas.read
-#parsed_content = Nokogiri::HTML(datos)
-#galeria = parsed_content.css('.article_movie_title')
-#puts galeria
+
+#Creación de archivo CSV general
+out_file_general = "juegos_general"
+CSV.open('csv/' +out_file_general +'.csv','a') do |csv|
+  csv << %w[top titulo genero plataforma anio_lanzamiento]
+end
+
 puts("---------3D JUEGOS---------")
 puts(link3d)
+#Extractor3d.new.extraerJuegos(link3d.to_s, out_file_3d)
 Extractor3d.new.extraerJuegos(link3d.to_s, out_file_3d)
 
 puts("---------LIGA DE GAMERS---------")
 puts(linkLiga)
+#ExtractorLiga.new.extraerJuegos(linkLiga.to_s, out_file_liga)
 ExtractorLiga.new.extraerJuegos(linkLiga.to_s, out_file_liga)
 
 puts("---------MUNDO GAMERS---------")
 puts(linkMundo)
+#ExtractorMundo.new.extraerJuegos(linkMundo.to_s, out_file_mundo)
 ExtractorMundo.new.extraerJuegos(linkMundo.to_s, out_file_mundo)
 
