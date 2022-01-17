@@ -1,6 +1,6 @@
 class Extractor3d
   def extraerJuegos(url, out_file)
-    CSV.open('csv/' +out_file +'.csv','wb') do |csv|
+    CSV.open('csv/' +out_file +'.csv','a') do |csv|
       csv << %w[top titulo genero plataforma anio_lanzamiento]
     end
     pagina = URI.open(url)
@@ -20,7 +20,7 @@ class Extractor3d
         end
         juego = Juegos.new(top,titulo,genero,plataforma,fecha)
         juego.toString()
-        juego.registrar()
+        juego.registrar(out_file)
       end 
     end
   end

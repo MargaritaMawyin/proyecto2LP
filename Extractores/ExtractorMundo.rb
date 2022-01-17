@@ -1,6 +1,6 @@
 class ExtractorMundo
   def extraerJuegos(url, out_file)
-    CSV.open('csv/' +out_file +'.csv','wb') do |csv|
+    CSV.open('csv/' +out_file +'.csv','a') do |csv|
       csv << %w[top titulo genero plataforma anio_lanzamiento]
     end
 
@@ -22,7 +22,7 @@ class ExtractorMundo
 
       juego = Juegos.new(top,titulo,genero,arreglo[0],fecha)
       juego.toString()
-      juego.registrar2()
+      juego.registrar(out_file)
       end
       
   end

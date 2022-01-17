@@ -8,20 +8,8 @@ class Juegos
     @fecha = fecha
   end
 
-  def registrar()
-    CSV.open('csv/3djuegos.csv','a') do |csv|
-      csv << [@top,@titulo,@genero,@plataforma,@fecha]
-    end
-  end
-
-  def registrar2()
-    CSV.open('csv/mundogamers.csv','a') do |csv|
-      csv << [@top,@titulo,@genero,@plataforma,@fecha]
-    end
-  end
-
-  def registrar3()
-    CSV.open('csv/ligagamers.csv','a') do |csv|
+  def registrar(out_file)
+    CSV.open('csv/' +out_file +'.csv','a') do |csv|
       csv << [@top,@titulo,@genero,@plataforma,@fecha]
     end
   end
