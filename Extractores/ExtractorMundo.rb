@@ -21,6 +21,7 @@ class ExtractorMundo
       end
 
       juego = Juegos.new(top,titulo,genero,arreglo[0],fecha)
+      juego.toString()
       juego.registrar2()
       end
       
