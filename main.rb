@@ -20,7 +20,7 @@ out_file_mundo = "mundogamers"
 
 #Creación de archivo CSV general
 out_file_general = "juegos_general"
-CSV.open('csv/' +out_file_general +'.csv','a') do |csv|
+CSV.open('csv/' +out_file_general +'.csv','wb') do |csv|
   csv << %w[top titulo genero plataforma anio_lanzamiento]
 end
 

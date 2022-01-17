@@ -4,7 +4,7 @@ class ExtractorLiga
   end 
 
   def extraerJuegos(url, out_file)
-    CSV.open('csv/' +out_file +'.csv','a') do |csv|
+    CSV.open('csv/' +out_file +'.csv','wb') do |csv|
       csv << %w[top titulo genero plataforma anio_lanzamiento]
     end
     pagina = URI.open(url)
