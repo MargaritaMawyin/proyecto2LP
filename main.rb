@@ -26,16 +26,16 @@ end
 
 puts("---------3D JUEGOS---------")
 puts(link3d)
-#Extractor3d.new.extraerJuegos(link3d.to_s, out_file_3d)
-Extractor3d.new.extraerJuegos(link3d.to_s, out_file_3d)
+extractor_3d = Extractor3d.new(out_file_general)
+extractor_3d.extraerJuegos(link3d.to_s, out_file_3d)
 
 puts("---------LIGA DE GAMERS---------")
 puts(linkLiga)
-#ExtractorLiga.new.extraerJuegos(linkLiga.to_s, out_file_liga)
-ExtractorLiga.new.extraerJuegos(linkLiga.to_s, out_file_liga)
+extractor_liga = ExtractorLiga.new(out_file_general)
+extractor_liga.extraerJuegos(linkLiga.to_s, out_file_liga)
 
 puts("---------MUNDO GAMERS---------")
 puts(linkMundo)
-#ExtractorMundo.new.extraerJuegos(linkMundo.to_s, out_file_mundo)
-ExtractorMundo.new.extraerJuegos(linkMundo.to_s, out_file_mundo)
+extractor_mundo = ExtractorMundo.new(out_file_general)
+extractor_mundo.extraerJuegos(linkMundo.to_s, out_file_mundo)
 
