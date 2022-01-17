@@ -16,7 +16,7 @@ class ExtractorLiga
         titulo = contenedorTitulo.inner_text.split(".")[1]
         genero = datos.css("li:nth-of-type(3)").inner_text.split(':')[1..-1].join(' ').strip.split(",")[0]
         plataforma = datos.css("li:nth-of-type(2)").inner_text.split(':')[1..-1].join(' ').strip.split(",")[0]
-        fecha = datos.css("li:first-of-type").inner_text.split(':')[1..-1].join(' ').strip
+        fecha = datos.css("li:first-of-type").inner_text.split(':')[1..-1].join(' ').strip[0..-2]
         juego = Juegos.new(top,titulo,genero,plataforma,fecha)
         juego.toString()
         juego.registrar3()
