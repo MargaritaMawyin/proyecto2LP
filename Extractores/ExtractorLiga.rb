@@ -1,7 +1,7 @@
 class ExtractorLiga
   def initialize(out_file_general)
     @out_file_general = out_file_general
-  end 
+  end
 
   def extraerJuegos(url, out_file)
     CSV.open('csv/' +out_file +'.csv','wb') do |csv|
@@ -17,8 +17,10 @@ class ExtractorLiga
       contenedor.each do |datos|
         top = contenedorTitulo.inner_text.split(".")[0]
         titulo = contenedorTitulo.inner_text.split(".")[1]
+
         genero = datos.css("li:nth-of-type(3)").inner_text.split(':')[1..-1].join(' ').strip.split(",")[0]
-        genero = genero.sub(".", "")
+        genero = genero.sub(".", "").downcase
+
         plataforma = datos.css("li:nth-of-type(2)").inner_text.split(':')[1..-1].join(' ').strip.split(",")[0]
         plataforma = plataforma.sub(".", "")
         fecha = datos.css("li:first-of-type").inner_text.split(':')[1..-1].join(' ').strip

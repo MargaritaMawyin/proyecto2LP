@@ -16,7 +16,9 @@ class Extractor3d
       contenedor.each do |datos|
         top = datos.css(".pos_top").inner_text
         titulo = datos.css("td a").inner_text
-        genero = datos.css("td[class='tac dn600 wi74']:first-of-type").inner_text
+
+        genero = datos.css("td[class='tac dn600 wi74']:first-of-type").inner_text.downcase
+
         plataforma = datos.css("td:nth-of-type(3)").css("div").inner_text
         fecha = datos.css("td[class='tac dn480 cF wi88']:first-of-type").inner_text.split('-')[2]
         if fecha == nil

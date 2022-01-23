@@ -17,7 +17,9 @@ class ExtractorMundo
 
       top = dato.css('.bloque_texto.fich div').inner_text
       titulo= dato.css('.carac').css('.ln1').css('.juego').inner_text
-      genero= dato.css('.carac').css('.ln2').css('.genero').inner_text
+
+      genero= dato.css('.carac').css('.ln2').css('.genero').inner_text.downcase
+
       fecha= dato.css('.carac').css('.ln2').css('.fecha_lanzamiento').inner_text.split('/')[2]
       arreglo=[]
       plataforma= dato.css('.carac').css('.ln3').css('.platforms_fich').css('.juego').each do |arr|
